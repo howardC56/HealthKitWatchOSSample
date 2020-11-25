@@ -120,6 +120,9 @@ extension HealthManager: HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDelegate 
     }
     
     func end() {
+        totalEnergyBurned = 0.0
+        totalDistance = 0.0
+        lastHeartRate = 0.0
         workoutSession?.end()
     }
     
